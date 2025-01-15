@@ -1,0 +1,7 @@
+services:
+  my-nginx:
+    container_name: my-nginx
+    dockerfile: Dockerfile
+    expose:
+      - 81:81
+    command: ["nginx", "-g", "daemon off;"]
