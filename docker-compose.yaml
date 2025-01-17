@@ -1,7 +1,18 @@
+# services:
+#   my-nginx:
+#     container_name: my-nginx
+#     dockerfile: Dockerfile
+#     expose:
+#       - 81:81
+#     command: ["nginx", "-g", "daemon off;"]
+
+
 services:
-  my-nginx:
-    container_name: my-nginx
-    dockerfile: Dockerfile
-    expose:
-      - 81:81
-    command: ["nginx", "-g", "daemon off;"]
+  rtmp:
+    container_name: rtmp-server
+    build: .
+    ports:
+      - "1935:1935"
+      - "82:82"
+    volumes:
+    - ./data:/tmp/hls
