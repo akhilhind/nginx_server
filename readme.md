@@ -48,7 +48,7 @@ docker compose up --build
 ### Watch live stream
 
 - use any player with stream support like [VLC](https://www.videolan.org/vlc/).
-- put the link: `rtmp://<IP>:1935/live/<stream-key>` to start streaming.
+- put the link: `rtmp://<IP>:1935/live/<stream-key>` to watch stream.
 
 
 ### Conclusion
